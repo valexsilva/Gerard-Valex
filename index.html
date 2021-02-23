@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
 
-  <body>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<head>
+  <meta charset="UTF-8">
+  <title>Fork Me! FCC: Test Suite Template</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
 
-    <!--
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <!--
 
     Hello Camper!
 
@@ -21,23 +32,85 @@
     - The freeCodeCamp Team
 
     -->
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h1 id="title"> Microverse test form</h1>
+      <p id="description"> This is part of the Microverse trials</p>
 
-    <h1 id="title"> Microverse test form</h1>
-    <p id="description"> This is part of the Microverse trials</p>
+      <form action="" id="survey-form">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="col-md-4 form-group">
+              <label id="name-label"> name
+                <input type="text" name="name" id="name" required placeholder="name" class="form-control">
+              </label>
+            </div>
+            <div class="col-md-4 form-group">
+              <label id="email-label"> email
+                <input type="email" name="email" id="email" required placeholder="email" class="form-control">
+              </label>
+            </div>
+            <div class="col-md-4 form-group">
+              <label id="number-label"> numero
+                <input type="number" required id="number" max="99" min="10" placeholder="number" class="form-control">
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12  form-group">
+            <select id="dropdown" name="option" class="form-control" required="">
+              <option disabled="" selected="" value="">Select option</option>
+              <option value="option 1">option 1</option>
+              <option value="option 3">option 2</option>
+              <option value="option 4">option 3</option>
+              <option value="option 5">option 4</option>
+              <option value="option 7">option 5</option>
+            </select>
+          </div>
+          <div class="col-md-12">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" name="group1" value="option1" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio 1
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" name="group1" value="option2" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio 2
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" name="group1" value="option3" checked>
+              <label class="form-check-label" for="exampleRadios1">
+                Default radio 3
+              </label>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="form-check">
+              <input  name="group2" value="option 1" type="checkbox" class="form-check-input">
+              <label class="form-check-label" for="exampleCheck1">Check me out 1</label>
+            </div>
+            <div class="form-check">
+              <input  name="group2" value="option 2" type="checkbox" class="form-check-input">
+              <label class="form-check-label" for="exampleCheck1">Check me out 2</label>
+            </div>
+            <div class="form-check">
+              <input  name="group2" value="option 3" type="checkbox" class="form-check-input">
+              <label class="form-check-label" for="exampleCheck1">Check me out 3</label>
+            </div>
+          </div>
+          <div class="col-md-12  form-group">
+            <textarea id="textArex"  class="form-control" name="textArex" placeholder="info..."></textarea>
+          </div>
+          <button id="submit" type="submit" class="btn btn-primary">save</button>
+        </div>
+      </form>
+    </div>
+  </div>
 
-    <form action="" id="survey-form" >
-      <label> name
-        <input type="text" name="name" id="name" required>
-      </label>
-      <label > email 
-        <input type="email" name="email" id="email" required>
-      </label>
-      <label > numero
-        <input type="number" required id="number"> 
-      </label>
+  <script src="js/index.js"></script>
+</body>
 
-    </form>
-
-    <script  src="js/index.js"></script>
-  </body>
 </html>
